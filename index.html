@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ressources pédagogiques - Dr BLORFAN</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    margin-bottom:40px;
+}
+
+header h1{
+    font-size:2.8rem;
+    color:#2a5298;
+}
+
+.subtitle{
+    color:#555;
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+/* GRID */
+.links-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.category{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:transform .3s;
+}
+
+.category:hover{
+    transform:translateY(-8px);
+}
+
+/* COLOR BAR */
+.category::before{
+    content:"";
+    display:block;
+    height:8px;
+}
+
+.blue::before{background:#007BFF;}
+.green::before{background:#28A745;}
+.purple::before{background:#6F42C1;}
+.orange::before{background:#FD7E14;}
+.red::before{background:#DC3545;}
+
+/* TITLES */
+.category-title{
+    padding:20px;
+    font-size:1.6rem;
+    color:#333;
+    border-bottom:1px solid #eee;
+}
+
+/* LINKS */
+.link-list{
+    list-style:none;
+    padding:15px 20px 25px;
+}
+
+.link-item{
+    margin-bottom:10px;
+}
+
+.link-item a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    background:#f8f9fa;
+    padding:12px 15px;
+    border-radius:10px;
+    color:#333;
+    font-weight:500;
+    transition:all .25s;
+}
+
+.link-item a:hover{
+    background:#e3f2fd;
+    color:#0056b3;
+    transform:translateX(6px);
+}
+
+.link-icon{
+    margin-right:12px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:white;
+}
+
+.signature{
+    margin-top:10px;
+    font-weight:bold;
+    color:#FFD700;
+    font-size:1.1rem;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <h1>📚 Projets et Activités – M.BLORFAN</h1>
+    <p class="subtitle">Plateforme complète de ressources pédagogiques STI2D & ETLV</p>
+</header>
+
+<div class="links-grid">
+
+<!-- ================= PROGRAMMATION ================= -->
+<div class="category blue">
+<h2 class="category-title">💻 Programmation et Arduino</h2>
+<ul class="link-list">
+<li class="link-item"><a href="https://blorfan.github.io/cpp/"><span class="link-icon">▶</span>C++ – Introduction</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/cpp1/"><span class="link-icon">▶</span>C++ – Suite</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/python/"><span class="link-icon">▶</span>Python</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/Arduino/"><span class="link-icon">▶</span>Arduino – Général</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/arduino1"><span class="link-icon">▶</span>Arduino – Partie 1</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/arduino2025/"><span class="link-icon">▶</span>Arduino 2025</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/arduino_LED/"><span class="link-icon">▶</span>Arduino – LED</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/capture/"><span class="link-icon">▶</span>Grove Block Builder</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/keypad"><span class="link-icon">▶</span>Keypad</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/blocks"><span class="link-icon">▶</span>Blocks</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/CPP_arduino"><span class="link-icon">▶</span>C++ Arduino</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/Matrix/"><span class="link-icon">▶</span>Matrix</a></li>
+</ul>
+</div>
+
+<!-- ================= ELECTRONIQUE ================= -->
+<div class="category green">
+<h2 class="category-title">⚡ Électronique et Électricité</h2>
+<ul class="link-list">
+<li class="link-item"><a href="https://blorfan.github.io/vecteur/"><span class="link-icon">▶</span>Vecteurs</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/vecteur2/"><span class="link-icon">▶</span>Vecteurs – Partie 2</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/acdc/"><span class="link-icon">▶</span>AC / DC</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/tpacdc/"><span class="link-icon">▶</span>TP AC / DC</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/sin/"><span class="link-icon">▶</span>Signaux sinusoïdaux</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/resistance"><span class="link-icon">▶</span>Résistances</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/ORT_Electrique/"><span class="link-icon">▶</span>ORT Électrique</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/LM35/"><span class="link-icon">▶</span>Capteur LM35</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/IR"><span class="link-icon">▶</span>IR</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/ATX/"><span class="link-icon">▶</span>ATX</a></li>
+<li class="link-item">
+<a href="https://blorfan.github.io/securite/" target="_blank">
+<span class="link-icon">▶</span><strong>Sécurité électronique et électrique</strong>
+</a>
+</li>
+</ul>
+</div>
+
+<!-- ================= PROJETS ================= -->
+<div class="category purple">
+<h2 class="category-title">🧪 Projets et Simulations</h2>
+<ul class="link-list">
+<li class="link-item"><a href="https://blorfan.github.io/projet1T/"><span class="link-icon">▶</span>Projet 1T</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/serre/"><span class="link-icon">▶</span>Projet Serre</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/sim/"><span class="link-icon">▶</span>Simulations</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/diagramme1/"><span class="link-icon">▶</span>Diagrammes interactifs</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/tpmix/"><span class="link-icon">▶</span>TP Mixte</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/nouveautp/"><span class="link-icon">▶</span>Nouveau TP</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/ORT_STI2D1/"><span class="link-icon">▶</span>ORT STI2D1</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/LASERRE_org"><span class="link-icon">▶</span>LASERRE Org</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/Inkscape/"><span class="link-icon">▶</span>Inkscape</a></li>
+</ul>
+</div>
+
+<!-- ================= SYSTEMES NUMERIQUES ================= -->
+<div class="category orange">
+<h2 class="category-title">🌐 Systèmes numériques</h2>
+<ul class="link-list">
+<li class="link-item"><a href="https://blorfan.github.io/SC/"><span class="link-icon">▶</span>Systèmes de conversion</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/HexDec/"><span class="link-icon">▶</span>Hex / Décimal</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/Hex/"><span class="link-icon">▶</span>Hexadécimal</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/ASCI/"><span class="link-icon">▶</span>Code ASCII</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/CAN/"><span class="link-icon">▶</span>CAN</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/THEME3/"><span class="link-icon">▶</span>Thème 3</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/reseauinformatique/"><span class="link-icon">▶</span>Réseau informatique</a></li>
+</ul>
+</div>
+
+<!-- ================= ETLV ================= -->
+<div class="category purple">
+<h2 class="category-title">🌍 ETLV – Visites virtuelles & 3D</h2>
+<ul class="link-list">
+<li class="link-item"><a href="https://ggnome.com/pano2vr/#download" target="_blank"><span class="link-icon">▶</span>Pano2VR</a></li>
+<li class="link-item"><a href="https://discover.matterport.com/space/WyNVGLJYWUs" target="_blank"><span class="link-icon">▶</span>Matterport – Visite 3D 1</a></li>
+<li class="link-item"><a href="https://discover.matterport.com/space/Shctie5LdZj" target="_blank"><span class="link-icon">▶</span>Matterport – Visite 3D 2</a></li>
+<li class="link-item"><a href="https://www.emaroundtheworld.com/virtual-tours-of-the-world/" target="_blank"><span class="link-icon">▶</span>Visites virtuelles du monde</a></li>
+<li class="link-item"><a href="https://www.louvre.fr/visites-en-ligne/petitegalerie/saison6/" target="_blank"><span class="link-icon">▶</span>Louvre – Petite Galerie S6</a></li>
+<li class="link-item"><a href="https://www.louvre.fr/en/online-tours#virtual-tours" target="_blank"><span class="link-icon">▶</span>Louvre – Online Tours</a></li>
+<li class="link-item"><a href="https://www.travelandleisure.com/attractions/museums-galleries/museums-with-virtual-tours" target="_blank"><span class="link-icon">▶</span>Musées avec visites virtuelles</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/pb_printer3d/"><span class="link-icon">▶</span>Dépannage imprimante 3D</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/3dprinter2/"><span class="link-icon">▶</span>Imprimante 3D – Partie 2</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/3dprinter/"><span class="link-icon">▶</span>Imprimante 3D – Bases</a></li>
+</ul>
+</div>
+
+<!-- ================= ACTIVITES ================= -->
+<div class="category red">
+<h2 class="category-title">📝 Activités et QCM</h2>
+<ul class="link-list">
+<li class="link-item"><a href="https://blorfan.github.io/activite0/"><span class="link-icon">▶</span>Activité 0</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/activite1/"><span class="link-icon">▶</span>Activité 1</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/QCMR/"><span class="link-icon">▶</span>QCM Résistances</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/QCMCAN/"><span class="link-icon">▶</span>QCM CAN</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/QCMCANT/"><span class="link-icon">▶</span>QCM CAN T</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/ETLVQCM/"><span class="link-icon">▶</span>ETLV QCM</a></li>
+<li class="link-item"><a href="https://blorfan.github.io/QCMCANCORRECTION"><span class="link-icon">▶</span>QCM CAN – Correction</a></li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+<p>Plateforme pédagogique – Tous droits réservés</p>
+<p class="signature">Dr. A. BLORFAN – Lycée ORT – Strasbourg – 2025/2026</p>
+</footer>
+
+</div>
+</body>
+</html>
